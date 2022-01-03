@@ -4,7 +4,7 @@ import {Client} from "@notionhq/client"
 import NavBar_Posts from '../../components/NavBar_Posts'
 import Script from 'next/script'
 import {useEffect} from 'react'
-import Prism from "Prismjs"
+import Prism from "prismjs"
 import 'prismjs/components/prism-python.js'
 
 export default function Post({pageData}) {
