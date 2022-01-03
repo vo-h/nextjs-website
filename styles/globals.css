@@ -1,9 +1,23 @@
+/* Panel: #FFED99, #F6B8B8, #AC66CC ,#3B14A7 */
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* font-family: 'Fuzzy Bubbles', cursive; */
+  /* background-color: #212529; */
+  font-size: large
+}
+
+hr {
+  margin: 3rem auto;
+  background-color: #F6B8B8;
+  width: 50%;
+  padding: 0.05rem;
+  opacity: 1;
 }
 
 a {
@@ -11,6 +25,9 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.headline {
+  background-image: linear-gradient(to left, #FFED99, #F6B8B8, #AC66CC);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold
 }
