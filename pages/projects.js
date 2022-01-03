@@ -24,9 +24,14 @@ export default function Projects() {
               github="https://github.com/vo-h/Chicago-Crime"
             />
             </Col>
-
           <Col lg>
-
+          <ResCard
+            img="https://repository-images.githubusercontent.com/443938170/a5a6a4b2-f3fa-4c0c-be3a-70c8c4c58afc"
+            title="NextJs Website"
+            text="A blog & resume website using NextJs, React-Bootstrap and a smattering of ther tools. Deployed on Vercel."
+            link="https://nextjs-website-vo-h.vercel.app/"
+            github="https://github.com/vo-h/nextjs-website"
+          />
           </Col>
 
         </Row>

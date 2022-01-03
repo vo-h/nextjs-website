@@ -5,7 +5,7 @@ export default function ResCard(props) {
   const socialSize=20;
 
   return (
-    <Container>
+    <Container className="my-3">
     <Row className="">
       <Col className="">
       <Card style={{backgroundColor: "#292421"}}>
