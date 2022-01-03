@@ -4,18 +4,14 @@ import {Client} from "@notionhq/client"
 import NavBar_Posts from '../../components/NavBar_Posts'
 import Script from 'next/script'
 import {useEffect} from 'react'
-import 'prismjs'
-import 'prismjs/components/prism-python'
+import Prism from "Prismjs"
+import 'prismjs/components/prism-python.js'
 
 export default function Post({pageData}) {
-  useEffect(() => {
-      if (typeof window !== 'undefined') {
-          Prism.highlightAll();
-      }
-  }, [])
+  useEffect(() => {Prism.highlightAll()}, [])
 
   return (
-    <Container className="px-5">
+    <Container className="px-5 mb-5 pb-5">
       <NavBar_Posts/>
 
       <Container>

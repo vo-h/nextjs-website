@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
 import Script from 'next/script'
 import Link from 'next/link'
+import 'prismjs/themes/prism-tomorrow.css';
 
 export default function MyApp({ Component, pageProps }) {
   return (
