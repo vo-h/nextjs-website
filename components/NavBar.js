@@ -10,7 +10,7 @@ export default function NavBar_Posts() {
     </Container>
     <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
-        <Navbar.Brand>Hien Vo</Navbar.Brand>
+        <Navbar.Brand href="/">Hien Vo</Navbar.Brand>
           <a href="https://www.linkedin.com/in/h-vo/" target="_blank" rel="noreferrer" className="mx-2">
             <Image src="linkedin.png" alt="LinkedIn icon" width={socialSize} height={socialSize}/>
           </a>
@@ -23,11 +23,11 @@ export default function NavBar_Posts() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/">About</Nav.Link>
-            <Nav.Link href="/skills">Skills</Nav.Link>
-            <Nav.Link href="/projects">Projects</Nav.Link>
-            <Nav.Link href="/blog">Blog</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/" className="d-flex flex-row-reverse">About</Nav.Link>
+            <Nav.Link href="/skills" className="d-flex flex-row-reverse">Skills</Nav.Link>
+            <Nav.Link href="/projects" className="d-flex flex-row-reverse">Projects</Nav.Link>
+            <Nav.Link href="/blog" className="d-flex flex-row-reverse">Blog</Nav.Link>
+            <Nav.Link href="/contact" className="d-flex flex-row-reverse">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

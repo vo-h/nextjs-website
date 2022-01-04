@@ -3,7 +3,7 @@ import Expo from '../components/Expo'
 import {Client} from "@notionhq/client"
 import NavBar from "../components/NavBar"
 import Link from 'next/link'
-import {getData, getRecords} from '../lib/posts'
+import {getRecords} from '../lib/notion-comm'
 
 export default function Blog(props) {
   const short_intro=`I like to write. I can't really promise I'll keep this page up to date, since I'm not only writing the English, but the code too. As of this writing, I'm still

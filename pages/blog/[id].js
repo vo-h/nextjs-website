@@ -1,5 +1,6 @@
 import {Container, Figure} from 'react-bootstrap';
-import {getPageIds, getPageData, getPageContent, getRecord, renderBlock, groupLists, formatListObject} from '../../lib/posts'
+import {getPageData, renderBlock, groupLists, formatListObject} from '../../lib/posts'
+import {getPageIds, getRecord, getPageContent} from '../../lib/notion-comm'
 import {Client} from "@notionhq/client"
 import NavBar_Posts from '../../components/NavBar_Posts'
 import Script from 'next/script'
@@ -11,7 +12,7 @@ export default function Post({pageData}) {
   useEffect(() => {Prism.highlightAll()}, [])
 
   return (
-    <Container className="px-5 mb-5 pb-5">
+    <Container className="px-lg-5 mb-5 pb-5">
       <NavBar_Posts/>
 
       <Container>
