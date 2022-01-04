@@ -46,30 +46,3 @@ export default function NavBar_Posts(props) {
     </>
   )
 };
-// <Nav className="justify-content-center">
-// <Image src="linkedin.png" width={40} height={40}/>
-// </Nav>
-
-
-// export default function NavBar() {
-//   return (
-//     <>
-//     <Container className="pt-5 mt-5" fluid>
-//     </Container>
-//     <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
-//       <Container>
-//         <Navbar.Brand href="#home">Hien Vo</Navbar.Brand>
-//         <Image src="linkedin.png" width={40} height={40}/>
-//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//         <Navbar.Collapse id="basic-navbar-nav">
-//           <Nav className="ms-auto">
-//             <Nav.Link href="/">About</Nav.Link>
-//             <Nav.Link href="">Blog</Nav.Link>
-//             <Nav.Link href="">Contact</Nav.Link>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//     </>
-//   )
-// };
