@@ -11,8 +11,8 @@ export default function NavBar_Posts(props) {
     console.log(newPath)
   }
 
-  const linkedinIcon=`${newPath}linkedin.webp`
-  const gitIcon= `${newPath}github.webp`
+  const linkedinIcon=`${newPath}linkedin_resized.webp`
+  const gitIcon= `${newPath}github_resized.webp`
   const medIcon=`${newPath}medium.webp`
 
   return (
@@ -23,13 +23,13 @@ export default function NavBar_Posts(props) {
       <Container>
         <Navbar.Brand href="/">Hien Vo</Navbar.Brand>
           <a href="https://www.linkedin.com/in/h-vo/" target="_blank" rel="noreferrer" className="mx-2">
-            <Image src={linkedinIcon} alt="LinkedIn icon" width={socialSize} height={socialSize}/>
+            <Image src={linkedinIcon} alt="LinkedIn icon" width={socialSize} fluid/>
           </a>
           <a href="https://github.com/vo-h" target="_blank" rel="noreferrer" className="mx-2">
-            <Image src={gitIcon} alt="GitHub icon" width={socialSize} height={socialSize}/>
+            <Image src={gitIcon} alt="GitHub icon" fluid/>
           </a>
           <a href="https://medium.com/@h-vo" target="_blank" rel="noreferrer" className="mx-2">
-            <Image src={medIcon} alt="Medium icon" width={socialSize} height={socialSize}/>
+            <Image src={medIcon} alt="Medium icon" width={socialSize} height={socialSize} fluid/>
           </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
