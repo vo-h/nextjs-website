@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <Container>
-      <NavBar/>
+      <NavBar path=""/>
       <Row>
 
         <Col lg className="d-flex justify-text-center">
@@ -17,7 +17,7 @@ export default function Home() {
         </Col>
 
         <Col lg className="d-flex justify-content-center my-auto">
-          <Image src="profile.png" width={300} height={300} alt="profile image" roundedCircle fluid/>
+          <Image src="profile.webp" width={300} height={300} alt="profile image" roundedCircle fluid/>
         </Col>
 
       </Row>

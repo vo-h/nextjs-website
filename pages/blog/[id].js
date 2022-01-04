@@ -2,7 +2,7 @@ import {Container} from 'react-bootstrap';
 import {getPageData, renderBlock, groupLists, formatListObject} from '../../lib/posts'
 import {getPageIds, getRecord, getPageContent} from '../../lib/notion-comm'
 import {Client} from "@notionhq/client"
-import NavBar_Posts from '../../components/NavBar_Posts'
+import NavBar from '../../components/NavBar'
 import {useEffect} from 'react'
 import Prism from "prismjs"
 import 'prismjs/components/prism-python.js'
@@ -12,7 +12,7 @@ export default function Post({pageData}) {
 
   return (
     <Container className="px-lg-5 mb-5 pb-5">
-      <NavBar_Posts/>
+      <NavBar newpath="../"/>
 
       <Container>
         <p className="display-6 text-white my-3">{pageData.title}</p>

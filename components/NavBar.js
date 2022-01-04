@@ -1,8 +1,19 @@
 import {Navbar, Container, Nav, Image, Row, Col} from 'react-bootstrap';
 
-export default function NavBar_Posts() {
+export default function NavBar_Posts(props) {
 
   const socialSize=35 ;
+
+  var newPath = ''
+
+  if (props.newpath) {
+    newPath=props.newpath
+    console.log(newPath)
+  }
+
+  const linkedinIcon=`${newPath}linkedin.webp`
+  const gitIcon= `${newPath}github.webp`
+  const medIcon=`${newPath}medium.webp`
 
   return (
     <>
@@ -12,13 +23,13 @@ export default function NavBar_Posts() {
       <Container>
         <Navbar.Brand href="/">Hien Vo</Navbar.Brand>
           <a href="https://www.linkedin.com/in/h-vo/" target="_blank" rel="noreferrer" className="mx-2">
-            <Image src="linkedin.png" alt="LinkedIn icon" width={socialSize} height={socialSize}/>
+            <Image src={linkedinIcon} alt="LinkedIn icon" width={socialSize} height={socialSize}/>
           </a>
           <a href="https://github.com/vo-h" target="_blank" rel="noreferrer" className="mx-2">
-            <Image src="github.png" alt="GitHub icon" width={socialSize} height={socialSize}/>
+            <Image src={gitIcon} alt="GitHub icon" width={socialSize} height={socialSize}/>
           </a>
           <a href="https://medium.com/@h-vo" target="_blank" rel="noreferrer" className="mx-2">
-            <Image src="medium.png" alt="Medium icon" width={socialSize} height={socialSize}/>
+            <Image src={medIcon} alt="Medium icon" width={socialSize} height={socialSize}/>
           </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
