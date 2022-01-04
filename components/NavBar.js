@@ -23,7 +23,7 @@ export default function NavBar_Posts(props) {
       <Container>
         <Navbar.Brand href="/">Hien Vo</Navbar.Brand>
           <a href="https://www.linkedin.com/in/h-vo/" target="_blank" rel="noreferrer" className="mx-2">
-            <Image src={linkedinIcon} alt="LinkedIn icon" width={socialSize} fluid/>
+            <Image src={linkedinIcon} alt="LinkedIn icon" fluid/>
           </a>
           <a href="https://github.com/vo-h" target="_blank" rel="noreferrer" className="mx-2">
             <Image src={gitIcon} alt="GitHub icon" fluid/>
