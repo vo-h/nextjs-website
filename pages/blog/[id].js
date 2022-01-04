@@ -1,9 +1,8 @@
-import {Container, Figure} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import {getPageData, renderBlock, groupLists, formatListObject} from '../../lib/posts'
 import {getPageIds, getRecord, getPageContent} from '../../lib/notion-comm'
 import {Client} from "@notionhq/client"
 import NavBar_Posts from '../../components/NavBar_Posts'
-import Script from 'next/script'
 import {useEffect} from 'react'
 import Prism from "prismjs"
 import 'prismjs/components/prism-python.js'
