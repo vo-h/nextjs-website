@@ -27,7 +27,7 @@ export default function Post({pageData}) {
 
 export async function getStaticPaths() {
   const notion = new Client({auth: process.env.NOTION_KEY})
-  const posts = await getPageIds(process.env.NOTION_DB, notion)
+  const posts = await getPageIds(process.env.NOTION_POSTS_DB, notion)
   const ids = posts.map(post => {return {params: {id: post.id}}})
   return {paths: ids, fallback: false}
 }
