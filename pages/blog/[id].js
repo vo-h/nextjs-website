@@ -36,7 +36,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}) {
 
   const notion = new Client({auth: process.env.NOTION_KEY})
-  const record = await getRecord(process.env.NOTION_DB, params.id, notion)
+  const record = await getRecord(process.env.NOTION_POSTS_DB, params.id, notion)
   const pageData = await getPageData(record)
   var pageContent = await getPageContent(record, notion)
 

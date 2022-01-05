@@ -1,9 +1,6 @@
 import {Card, Row, Col, Container, Image} from 'react-bootstrap';
 
 export default function ResCard(props) {
-
-  const socialSize=20;
-
   return (
     <Container className="my-3">
     <Row className="">
@@ -15,10 +12,10 @@ export default function ResCard(props) {
           <Card.Text>{props.text}</Card.Text>
         <Card.Footer className="d-flex justify-content-end">
           <a href={props.link} target="_blank" rel="noreferrer">
-            <Image src="link_white.png" alt="Link icon" width={socialSize} height={socialSize} className="mx-2" flex/>
+            <Image src="link_white.webp" alt="Link icon" style={{maxWidth:20, heigh:"auto"}} className="mx-2" flex/>
           </a>
           <a href={props.github} target="_blank" rel="noreferrer">
-            <Image src="github_white.png" alt="GitHub icon" width={socialSize} height={socialSize} className="mx-2" flex/>
+            <Image src="github_white.webp" alt="GitHub icon" style={{maxWidth:20, heigh:"auto"}} className="mx-2" flex/>
           </a>
         </Card.Footer>
         </Card.Body>

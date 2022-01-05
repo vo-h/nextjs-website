@@ -32,7 +32,7 @@ export default function Blog(props) {
 export async function getStaticProps() {
 
   const notion = new Client({auth: process.env.NOTION_KEY})
-  const records = await getRecords(process.env.NOTION_DB, notion)
+  const records = await getRecords(process.env.NOTION_POSTS_DB, notion)
   const ids = records.map(record => {
     return {
       title: record.properties.Title.title[0].plain_text,
