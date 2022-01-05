@@ -44,7 +44,7 @@ export async function getStaticProps() {
 
   const notion = new Client({auth: process.env.NOTION_KEY})
   const records = await getRecords(process.env.NOTION_PROJECTS_DB, notion)
-  const projects = await parseProjects(records)
+  const projects = await parseProjects(records, process.env.GITHUB_KEY)
 
   return {props: {projects: projects}}
 }
